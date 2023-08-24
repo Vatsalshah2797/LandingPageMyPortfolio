@@ -62,6 +62,12 @@
             color: orange;
             }
 
+            .content-set{
+                width: 500px;
+                text-align: justify;
+                padding: 20px 0px;
+            }
+
             .addbackground-color{
               /* background-color: #7952b3; */
               background-color:rgba(86, 86, 227, 0.8);
@@ -150,7 +156,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="btn btn-lg addbackground-color" href="https://vatsalshah.netlify.app/" role="button" >Sign up</a>
+                                <a class="btn btn-lg rounded-4 addbackground-color" href="https://vatsalshah.netlify.app/" role="button" >Sign up</a>
                             </li>
                         </ul>
                     </div>
@@ -175,17 +181,22 @@
                                         data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">
                                         Fullstack developer
                                     </h2>
-                                    <p class="">
-                                        Problem solver, PHP Laravel Vue JS Developer
+                                    <h3 class="add-light-background-color" style="width: fit-content;">
+                                        Problem solver
+                                    </h3>
+                                    <p class="content-set"> PHP Laravel Vue JS Developer Curious learner 
+                                        <br/>
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni quod, sunt ducimus impedit sapiente voluptatibus dolor, rerum adipisci laudantium ipsum odit minus dolore. Sequi sit iure temporibus dolores nam dicta?
                                     </p>
+                                    
                                     <!-- CTA elements -->
                                     <div class="align-items-left w-100 justify-content-between  mb-2" data-mdb-toggle="animation"
                                         data-mdb-animation-start="onLoad" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
                                         data-mdb-animation-delay="600">
                                         <hr class="hr d-none d-xl-flex" style="height: 2px; width: 200px;">
-                                        <a class="btn btn-primary btn-lg btn-rounded addbackground-color" href="https://vatsalshah.netlify.app/" role="button">Checkout My Profile</a>
+                                        <a class="btn btn-primary btn-lg btn-rounded rounded-4 addbackground-color" href="https://vatsalshah.netlify.app/" role="button">Checkout My Profile</a>
                                     </div>
-                                    <p class="mb-5">
+                                    <p class="mb-5 mt-5">
                                         We are trusted by 50+ companies
                                     </p>
                                 </div>
@@ -298,37 +309,46 @@
                 </section>
                 <!--Section: Articles-->
                 <section class="mt-5 p-4">
-                    <div class="row">
+                    <div class="row mb-5">
                         <div class="col-md-6 gx-5 mb-4">
-                            <h4><strong>Get everything</strong></h4>
-                            <h4><strong>done in one place.</strong></h4>
-                            <div class="row mt-5">
-                                <div class="col-md-6">
-                                    <i class="fab fa-facebook-f"></i>
-                                    <h3 class="mt-2">Manage Tasks</h3>
+                            <h2 class="fw-bold">Get everything</h2>
+                            <h2 class="fw-bold">done in one place.</h2>
+                            <div class="row mt-5 mb-3">
+                                <div class="col-md-6 ">
+                                    <div class="px-3 py-2 addbackground-color rounded-circle" style="width: fit-content;">
+                                        <i class="fas fa-tasks"></i>
+                                    </div>
+                                    <h3 class="mt-3">Manage Tasks</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
                                         consequatur eligendi quisquam doloremque vero ex debitis
                                     </p>
                                 </div>
                                 <div class="col-md-6">
-                                    <i class="fab fa-twitter"></i>
-                                    <h3 class="mt-2">Productivity</h3>
+                                    <div class="px-3 py-2 addbackground-color rounded-circle" style="width: fit-content;">
+                                        <i class="fa fa-industry"></i>
+                                    </div>
+                                    <h3 class="mt-3">Productivity</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
                                         consequatur eligendi quisquam doloremque vero ex debitis
                                     </p>
                                 </div>
                             </div>
-                            <div class="row">
+                            <div class="row mb-3">
                                 <div class="col-md-6">
-                                    <i class="fab fa-instagram"></i>
-                                    <h3 class="mt-2">Knowledge</h3>
+                                    <div class="px-3 py-2 addbackground-color rounded-circle" style="width: fit-content;">
+                                        <i class="fa-solid fa-book"></i>
+                                    </div>
+                                    
+                                    <h3 class="mt-3">Knowledge</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
                                         consequatur eligendi quisquam doloremque vero ex debitis
                                     </p>
                                 </div>
                                 <div class="col-md-6">
-                                    <i class="fab fa-github"></i>
-                                    <h3 class="mt-2">Collaboration</h3>
+                                    <div class="px-3 py-2 addbackground-color rounded-circle" style="width: fit-content;">
+                                        <i class="fa-solid fa-handshake"></i>
+                                    </div>
+                                    <h3 class="mt-3">Collaboration</h3>
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
                                         consequatur eligendi quisquam doloremque vero ex debitis
                                     </p>
@@ -803,21 +823,29 @@
                                     <p>
                                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                                         <!-- Logo -->
-                                        <li class="nav-item">
-                                            <img src="./assets/images/logo.png" alt="logo" 
-                                                height="20px" alt="Logo" loading="lazy" /><span style="margin-left: 10px;">Nunc tincidunt vulputate elit. Lorem ipsum</span>
+                                        <li class="nav-item d-flex justify-content-start align-items-center">
+                                            <div class="px-2 py-1 addbackground-color rounded-circle" style="width: fit-content;">
+                                                <i class="fas fa fa-check"></i>
+                                            </div>
+                                            <span class="p-2">Lorem ipsum tincidunt vulputate elit.</span>
                                         </li>
-                                        <li class="nav-item">
-                                            <img src="./assets/images/logo.png" alt="logo" 
-                                                height="20px" alt="Logo" loading="lazy" /><span style="margin-left: 10px;">tincidunt vulputate elit.  Lorem ipsum</span>
+                                        <li class="nav-item d-flex justify-content-start align-items-center">
+                                            <div class="px-2 py-1 addbackground-color rounded-circle" style="width: fit-content;">
+                                                <i class="fas fa fa-check"></i>
+                                            </div>
+                                            <span class="p-2">Lorem ipsum tincidunt vulputate elit.</span>
                                         </li>
-                                        <li class="nav-item">
-                                            <img src="./assets/images/logo.png" alt="logo" 
-                                                height="20px" alt="Logo" loading="lazy" /><span style="margin-left: 10px;">Nunc vulputate elit.  Lorem ipsum</span>
+                                        <li class="nav-item d-flex justify-content-start align-items-center">
+                                            <div class="px-2 py-1 addbackground-color rounded-circle" style="width: fit-content;">
+                                                <i class="fas fa fa-check"></i>
+                                            </div>
+                                            <span class="p-2">Lorem ipsum tincidunt vulputate elit.</span>
                                         </li>
-                                        <li class="nav-item">
-                                            <img src="./assets/images/logo.png" alt="logo" 
-                                                height="20px" alt="Logo" loading="lazy" /><span style="margin-left: 10px;">Nunc tincidunt elit.  Lorem ipsum</span>
+                                        <li class="nav-item d-flex justify-content-start align-items-center">
+                                            <div class="px-2 py-1 addbackground-color rounded-circle" style="width: fit-content;">
+                                                <i class="fas fa fa-check"></i>
+                                            </div>
+                                            <span class="p-2">Lorem ipsum tincidunt vulputate elit.</span>
                                         </li>
                                     </ul>
                                     </p>
@@ -861,7 +889,7 @@
                                         <p class="text-muted mb-4 mt-2">
                                             Nunc tincidunt vulputate elit. Mauris varius purus malesuada
                                         </p>
-                                        <a class="btn btn-primary btn-lg addbackground-color" href="https://vatsalshah.netlify.app/" role="button">Checkout My Profile</a>
+                                        <a class="btn btn-primary btn-lg addbackground-color rounded-4" href="https://vatsalshah.netlify.app/" role="button">Checkout My Profile</a>
                                     </div>
                                 </div>
                             </div>
@@ -885,91 +913,175 @@
                     </div>
                 </section>
                 <!-- Section: About me -->
-                <!-- Section: Testimonials -->
-                <section class="mb-10 text-center">
-                    <h2 class="fw-bold mb-6 text-center">What they say about us</h2>
-                    <h3 class="mb-4 text-center">Happy clients</h3>
-                    <div class="row gx-lg-5">
-                        <!-- First column -->
-                        <div class="col-lg-4 mb-5 mb-lg-0">
-                            <div data-mdb-toggle="animation" data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
-                                data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">
-                                <div class="rounded-7 p-4 shadow-3" style="background-color: hsl(218, 62.2%, 95%)">
-
-                                  <div class="flex flex-column justify-content-between align-items-left">
-                                    <img src="./assets/images/22.jpg" class="w-100 rounded-7 mt-n5 shadow-5-strong" style="max-width: 100px" alt="Avatar" />
-                                    <p class="h5 mb-4 text-primary">Garry Lindman</p>
-                                    <p class="text-muted mt-4 mb-2">Project Manager at Spotify</p>
-                                    <div class="flex flex-column">
-                                      <span class="fa fa-star checked"></span>
-                                      <span class="fa fa-star checked"></span>
-                                      <span class="fa fa-star checked"></span>
-                                      <span class="fa fa-star checked"></span>
-                                      <span class="fa fa-star checked"></span>
-                                    </div>
-                                    <p class="pb-4 mb-4 text-left">
-                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestias quidem
-                                        itaque earum tempora distinctio soluta ut, eius, impedit porro iure praesentium
-                                        ratione possimus quos suscipit, ratione nostrum cum odit.
-                                    </p>
-                                  </div>
-
-                                    <hr class="hr hr-blurry">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- First column -->
-                        <!-- Second column -->
-                        <div class="col-lg-4 mb-5 mb-lg-0">
-                            <div data-mdb-toggle="animation" data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
-                                data-mdb-animation-show-on-load="false" data-mdb-animation-delay="400">
-                                <div class="rounded-7 p-4 shadow-3" style="background-color: hsl(218, 62.2%, 95%)">
-                                    <hr class="hr hr-blurry">
-                                    <p class="text-muted mt-4 mb-2">CEO at Reddit</p>
-                                    <p class="h5 mb-4 text-primary">Lisa Montessori</p>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <p class="pb-4 mb-4">
-                                        Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                                        soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
-                                        placeat facere possimus, omnis voluptas assumenda est omnis.
-                                    </p>
-                                </div>
-                                <img src="./assets/images/11.jpg" class="w-100 rounded-7 mt-n5 shadow-5-strong"
-                                    style="max-width: 100px" alt="Avatar" />
-                            </div>
-                        </div>
-                        <!-- Second column -->
-                        <!-- Third column -->
-                        <div class="col-lg-4">
-                            <div data-mdb-toggle="animation" data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
-                                data-mdb-animation-show-on-load="false" data-mdb-animation-delay="600">
-                                <div class="rounded-7 p-4 shadow-3" style="background-color: hsl(218, 62.2%, 95%)">
-                                    <hr class="hr hr-blurry">
-                                    <p class="text-muted mt-4 mb-2">Senior Product Designer at Twitter</p>
-                                    <p class="h5 mb-4 text-primary">Ozzy McRyan</p>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <p class="pb-4 mb-4">
-                                        Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe
-                                        eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque
-                                        earum rerum hic tenetur a sapiente delectus ut aut reiciendis.
-                                    </p>
-                                </div>
-                                <img src="./assets/images/25.jpg" class="w-100 rounded-7 mt-n5 shadow-5-strong"
-                                    style="max-width: 100px" alt="Avatar" />
-                            </div>
-                        </div>
-                        <!-- Third column -->
-                    </div>
-                </section>
-                <!-- Section: Testimonials -->
+                
             </div>
+            <!-- About Us Testimonial Carousel wrapper -->
+            <section class="mb-8">
+                <h2 class="fw-bold mb-2 text-center">What they say about us</h2>
+                <p class="text-center">Happy clients</p>
+                <div class="py-1 px-5">
+                    
+                    <div id="carouselMultiItemExample" class="carousel carousel-dark text-left" data-mdb-ride="carousel">
+                        <!-- Controls -->
+                        <div class="d-flex justify-content-center mb-4">
+                            <!-- <button class="carousel-control-prev position-relative" type="button"
+                                data-mdb-target="#carouselMultiItemExample" data-mdb-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next position-relative" type="button"
+                                data-mdb-target="#carouselMultiItemExample" data-mdb-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button> -->
+                        </div>
+                        <!-- Inner -->
+                        <div class="carousel-inner py-4">
+                        <!-- Single item -->
+                        <div class="carousel-item active">
+                            <div class="row gap-4 mx-auto justify-content-center">
+                                <div class="col-lg-3 bg-light shadow-sm p-4" style="width: 23%;">
+                                <img class="rounded-circle shadow-1-strong mb-4"
+                                    src="./assets/images/img1.webp" alt="avatar"
+                                    style="width: 50px;" alt="people" />
+                                <h5 class="mb-3">Anna Deynah</h5>
+                                <p>CEO at Reddit</p>
+                                <ul class="list-unstyled d-flex text-warning mb-0">
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                </ul>
+                                <p class="text-muted mt-2">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                                    officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                                </p>
+                                
+                                </div>
+                                <div class="col-lg-3 bg-light shadow-sm p-4" style="width: 23%;">
+                                <img class="rounded-circle shadow-1-strong mb-4"
+                                    src="./assets/images/img2.webp" alt="avatar"
+                                    style="width: 50px;" alt="people" />
+                                <h5 class="mb-3">John Doe</h5>
+                                <p>Web Developer</p>
+                                <ul class="list-unstyled d-flex text-warning mb-0">
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li>
+                                    <i class="fas fa-star-half-alt fa-sm"></i>
+                                    </li>
+                                </ul>
+                                <p class="text-muted mt-2">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                    suscipit laboriosam, nisi ut aliquid commodi.
+                                </p>
+                                
+                                </div>
+                                <div class="col-lg-3 bg-light shadow-sm p-4" style="width: 23%;">
+                                    <img class="rounded-circle shadow-1-strong mb-4"
+                                        src="./assets/images/img3.webp" alt="avatar"
+                                        style="width: 50px;" alt="people" />
+                                    <h5 class="mb-3">Maria Kate</h5>
+                                    <p>Photographer</p>
+                                    <ul class="list-unstyled d-flex text-warning mb-0">
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="far fa-star fa-sm"></i></li>
+                                    </ul>
+                                    <p class="text-muted mt-2">
+                                        <i class="fas fa-quote-left pe-2"></i>
+                                        At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                        praesentium voluptatum deleniti atque corrupti.
+                                    </p>
+                                
+                                </div>
+                                <div class="col-lg-3 bg-light shadow-sm p-4" style="width: 23%;">
+                                    <img class="rounded-circle shadow-1-strong mb-4"
+                                        src="./assets/images/img4.webp" alt="avatar"
+                                        style="width: 50px;" />
+                                    <h5 class="mb-3">John Doe</h5>
+                                    <p>UX Designer</p>
+                                    <ul class="list-unstyled d-flex text-warning mb-0">
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                        <li><i class="fas fa-star fa-sm"></i></li>
+                                    </ul>
+                                    <p class="text-muted mt-2">
+                                        <i class="fas fa-quote-left pe-2"></i>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod eos id
+                                        officiis hic tenetur quae quaerat ad velit ab hic tenetur.
+                                    </p>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single item -->
+                        <div class="carousel-item">
+                            <div class="px-5">
+                            <div class="row gap-4">
+                                <div class="col-lg-3 d-lg-block bg-light shadow-sm p-4" style="width: 23%;">
+                                <img class="rounded-circle shadow-1-strong mb-4"
+                                    src="./assets/images/img5.webp" alt="avatar"
+                                    style="width: 50px;" alt="people" />
+                                <h5 class="mb-3">Alex Rey</h5>
+                                <p>Web Developer</p>
+                                <ul class="list-unstyled d-flex text-warning mb-0">
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li>
+                                    <i class="fas fa-star-half-alt fa-sm"></i>
+                                    </li>
+                                </ul>
+                                <p class="text-muted mt-2">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis
+                                    suscipit laboriosam, nisi ut aliquid commodi.
+                                </p>
+                                
+                                </div>
+                    
+                                <div class="col-lg-3 d-lg-block bg-light shadow-sm p-4" style="width: 23%;">
+                                <img class="rounded-circle shadow-1-strong mb-4"
+                                    src="./assets/images/img6.webp" alt="avatar"
+                                    style="width: 50px;" alt="people"/>
+                                <h5 class="mb-3">Maria Kate</h5>
+                                <p>Photographer</p>
+                                <ul class="list-unstyled d-flex text-warning mb-0">
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="fas fa-star fa-sm"></i></li>
+                                    <li><i class="far fa-star fa-sm"></i></li>
+                                </ul>
+                                <p class="text-muted mt-2">
+                                    <i class="fas fa-quote-left pe-2"></i>
+                                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
+                                    praesentium voluptatum deleniti atque corrupti.
+                                </p>
+                                
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    
+                        
+                    </div>
+                    
+                    </div>
+                </div>
+            </section>
+            <!-- Carousel wrapper -->
             <!--Section: Content-->
             <section class="add-light-background-color">
                 <div class="container py-5">
@@ -1029,7 +1141,7 @@
                                         <!-- Email input -->
                                         <i class="fa fa-envelope px-2"></i>
                                         <input type="email" id="form5Example21" class="border-0 form-control me-2" placeholder="Your email address" />
-                                        <button type="submit" class="btn addbackground-color">
+                                        <button type="submit" class="btn addbackground-color rounded-4">
                                         Subscribe
                                         </button>
                                     </div>
