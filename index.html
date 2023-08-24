@@ -49,13 +49,31 @@
             padding-bottom: 5px;
             }
             .facts .counters span {
-            font-size: 48px;
-            display: block;
-            color: #34b7a7;
+              font-size: 48px;
+              display: block;
+              color: #000;
+            }
+            .facts .counter span .counter-word {
+              font-size: 48px;
+              display: block;
+              color: #34b7a7;
             }
             .checked {
             color: orange;
             }
+
+            .addbackground-color{
+              /* background-color: #7952b3; */
+              background-color:rgba(86, 86, 227, 0.8);
+              color: aliceblue;
+            }
+
+            .add-light-background-color{
+              /* background-color: rgb(85, 68, 212); */
+              background-color:rgba(86, 86, 227,0.2)	;
+            }
+
+            
             /* Navbar on mobile */
             @media (max-width: 991.98px) {
             #main-navbar {
@@ -66,17 +84,28 @@
             color: #4f4f4f !important;
             }
             .hero-section-card {
-            margin-top: 100px; 
-            position: absolute; 
-            z-index: 9999; 
-            color: #fff; 
-            align-items: center; 
-            height: 100vh;
+              margin-top: 100px; 
+              position: absolute; 
+              z-index: 9999; 
+              color: #fff; 
+              align-items: center; 
+              height: 100vh;
             }
+            .subscribe .inputbox {
+              flex-basis: 100% !important;
+            }
+            .subscribe h1 {
+              flex-basis: 100%;
+              text-align: center;
+            }
+            
             }
             @media (min-width: 992px) {
             .rotate-lg {
             transform: rotate(6deg);
+            }
+            .navigation-link{
+              margin-left: -37px;
             }
             }
         </style>
@@ -96,10 +125,10 @@
                     </button>
                     <!-- Collapsible wrapper -->
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-lg-6 d-flex justify-content-center align-items-center navigation-link">
                             <!-- Logo -->
-                            <a class="navbar-brand me-1" href="#"><img src="./assets/images/logo.png"
-                                height="20px" alt="Logo" loading="lazy" alt="logo" /></a>
+                            <a class="navbar-brand me-1 mr-4" href="#"><img src="./assets/images/logo.png"
+                                height="20px" alt="Logo" loading="lazy" alt="logo" />Logo</a>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" href="https://vatsalshah.netlify.app/resume">Projects</a>
                             </li>
@@ -121,9 +150,7 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link px-2" href="#!">
-                                Signup
-                                </a>
+                                <a class="btn btn-lg addbackground-color" href="https://vatsalshah.netlify.app/" role="button" >Sign up</a>
                             </li>
                         </ul>
                     </div>
@@ -156,7 +183,7 @@
                                         data-mdb-animation-start="onLoad" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
                                         data-mdb-animation-delay="600">
                                         <hr class="hr d-none d-xl-flex" style="height: 2px; width: 200px;">
-                                        <a class="btn btn-primary btn-lg btn-rounded" href="https://vatsalshah.netlify.app/" role="button">Checkout My Profile</a>
+                                        <a class="btn btn-primary btn-lg btn-rounded addbackground-color" href="https://vatsalshah.netlify.app/" role="button">Checkout My Profile</a>
                                     </div>
                                     <p class="mb-5">
                                         We are trusted by 50+ companies
@@ -236,24 +263,36 @@
             <div class="container">
                 <!-- Section: Counter -->
                 <section id="facts" class="facts">
-                    <div class="container aos-init aos-animate" data-aos="fade-up">
-                        <div class="row counters bg-light">
-                            <div class="col-lg-4 col-6 text-center">
-                                <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter">50+</span>
+                    <div class="container aos-init aos-animate border-bottom border-3" data-aos="fade-up">
+                        <div class="row counters">
+                            <div class="col-lg-3 col-6 text-center border-end">
+                                <div class="d-flex justify-content-center">
+                                  <span data-purecounter-start="0" data-purecounter-end="50" data-purecounter-duration="1" class="purecounter">50</span>
+                                  <span class="counter-word">k</span>
+                                </div>
                                 <p>Clients</p>
                             </div>
-                            <div class="col-lg-4 col-6 text-center">
-                                <span data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="1" class="purecounter">300+</span>
+                            <div class="col-lg-3 col-6 text-center border-end">
+                                <div class="d-flex justify-content-center">
+                                  <span data-purecounter-start="0" data-purecounter-end="300" data-purecounter-duration="1" class="purecounter">300%</span>
+                                  <span class="counter-word">%</span>
+                                </div>
                                 <p>Projects</p>
                             </div>
-                            <div class="col-lg-4 col-6 text-center">
-                                <span data-purecounter-start="0" data-purecounter-end="21900" data-purecounter-duration="1" class="purecounter">21900+</span>
+                            <div class="col-lg-3 col-6 text-center border-end">
+                                <div class="d-flex justify-content-center">
+                                  <span data-purecounter-start="0" data-purecounter-end="219" data-purecounter-duration="1" class="purecounter">219k</span>
+                                  <span class="counter-word">k</span>
+                                </div>
                                 <p>Hours Of Support</p>
                             </div>
-                            <!-- <div class="col-lg-3 col-6 text-center">
-                                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
-                                <p>Hard Workers</p>
-                                </div> -->
+                            <div class="col-lg-3 col-6 text-center">
+                                <div class="d-flex justify-content-center">
+                                  <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter">15%</span>
+                                  <span class="counter-word">%</span>
+                                </div>
+                                <p>Achievements</p>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -333,7 +372,7 @@
                                         placerat vulputate. Ut vulputate est non quam dignissim
                                         elementum. Donec a ullamcorper diam.
                                     </p>
-                                    <a href="#!" class="btn btn-secondary btn-rounded" data-mdb-toggle="modal" data-mdb-target="#project-1">Read more</a>
+                                    <a href="#!" class="btn btn-secondary btn-rounded addbackground-color" data-mdb-toggle="modal" data-mdb-target="#project-1">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -360,7 +399,7 @@
                                         diam orci, nec ornare metus semper sed. Integer volutpat
                                         ornare erat sit amet rutrum. Ut vulputate est non quam.
                                     </p>
-                                    <a href="#!" class="btn btn-secondary btn-rounded" data-mdb-toggle="modal" data-mdb-target="#project-2">Read more</a>
+                                    <a href="#!" class="btn btn-secondary btn-rounded addbackground-color" data-mdb-toggle="modal" data-mdb-target="#project-2">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -387,7 +426,7 @@
                                         arcu, non vehicula nisl dui quis diam. Mauris ut risus eget
                                         massa volutpat feugiat. Donec.
                                     </p>
-                                    <a href="#!" class="btn btn-secondary btn-rounded" data-mdb-toggle="modal" data-mdb-target="#project-3">Read more</a>
+                                    <a href="#!" class="btn btn-secondary btn-rounded addbackground-color" data-mdb-toggle="modal" data-mdb-target="#project-3">Read more</a>
                                 </div>
                             </div>
                         </div>
@@ -720,75 +759,82 @@
                     </div>
                 </section>
                 <!-- Section: Projects modals -->
-                <!--Section: Collaborate-->
-                <section class="mb-10 bg-secondary bg-opacity-25">
-                    <div class="container">
-                        <div class="row gx-0 align-items-center">
-                            <!-- First column -->
-                            <div class="col-lg-6 mb-5 mb-lg-0">
-                                <div class="bg-image hover-overlay rounded-7 shadow-4 rotate-lg" data-mdb-toggle="animation"
-                                    data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
-                                    data-mdb-animation-delay="200" data-mdb-animation-offset="300">
-                                    <img src="./assets/images/272.jpg" class="w-100" alt="people" />
-                                    <div class="mask" style="background: linear-gradient(
-                                        45deg,
-                                        hsla(169, 84.5%, 52%, 0.3),
-                                        hsla(263, 87.7%, 44.7%, 0.3) 100%
-                                        )">
-                                    </div>
+            </div>
+            <!--Section: Collaborate-->
+            <section class="add-light-background-color mb-10 bg-opacity-25">
+                <div class="container py-5">
+                    <div class="row gx-0 align-items-center">
+                        <!-- First column -->
+                        <div class="col-lg-6 mb-5 mb-lg-0">
+                            <div class="bg-image hover-overlay rounded-7 shadow-4 rotate-lg" data-mdb-toggle="animation"
+                                data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
+                                data-mdb-animation-delay="200" data-mdb-animation-offset="300">
+                                <img src="./assets/images/272.jpg" class="w-100" alt="people" />
+                                <div class="mask" style="background: linear-gradient(
+                                    45deg,
+                                    hsla(169, 84.5%, 52%, 0.3),
+                                    hsla(263, 87.7%, 44.7%, 0.3) 100%
+                                    )">
                                 </div>
                             </div>
-                            <!-- First column -->
-                            <!-- Second column -->
-                            <div class="col-lg-6 mb-5 mb-lg-0">
-                                <div style="background: hsla(0, 0%, 100%, 0.55); 
-                                    backdrop-filter: blur(30px);
-                                    z-index: 1;" class="card rounded-7 me-lg-n5" data-mdb-toggle="animation"
-                                    data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
-                                    data-mdb-animation-delay="600">
-                                    <div class="card-body p-lg-5 shadow-5">
-                                        <h2 class="fw-bold">
-                                            <span class="text-primary">Collaborate with</span>
-                                            <br/>
-                                            <span class="text-primary">team members and</span>
-                                            <br/>
-                                            <span class="text-primary">craete reports.</span>
-                                        </h2>
-                                        <p class="fw-bold"><em>“Passion about coding”</em></p>
-                                        <p class="text-muted mb-4">
-                                            Nunc tincidunt vulputate elit. Mauris varius purus malesuada
-                                            neque iaculis malesuada. Aenean gravida magna orci, non
-                                            efficitur est porta id. Donec magna diam.
-                                        </p>
-                                        <p>
-                                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                            <!-- Logo -->
-                                            <li class="nav-item">
-                                                <img src="./assets/images/logo.png" alt="logo" 
-                                                    height="20px" alt="Logo" loading="lazy" /><span style="margin-left: 10px;">Nunc tincidunt vulputate elit. Lorem ipsum</span>
-                                            </li>
-                                            <li class="nav-item">
-                                                <img src="./assets/images/logo.png" alt="logo" 
-                                                    height="20px" alt="Logo" loading="lazy" /><span style="margin-left: 10px;">tincidunt vulputate elit.  Lorem ipsum</span>
-                                            </li>
-                                            <li class="nav-item">
-                                                <img src="./assets/images/logo.png" alt="logo" 
-                                                    height="20px" alt="Logo" loading="lazy" /><span style="margin-left: 10px;">Nunc vulputate elit.  Lorem ipsum</span>
-                                            </li>
-                                            <li class="nav-item">
-                                                <img src="./assets/images/logo.png" alt="logo" 
-                                                    height="20px" alt="Logo" loading="lazy" /><span style="margin-left: 10px;">Nunc tincidunt elit.  Lorem ipsum</span>
-                                            </li>
-                                        </ul>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- Second column -->
                         </div>
+                        <!-- First column -->
+                        <!-- Second column -->
+                        <div class="col-lg-6 mb-5 mb-lg-0">
+                            <div style="background: hsla(0, 0%, 100%, 0.55); 
+                                backdrop-filter: blur(30px);
+                                z-index: 1;" class="card rounded-7 me-lg-n5" data-mdb-toggle="animation"
+                                data-mdb-animation-start="onScroll" data-mdb-animation="fade-in" data-mdb-animation-show-on-load="false"
+                                data-mdb-animation-delay="600">
+                                <div class="card-body p-lg-5 shadow-5">
+                                    <h2 class="fw-bold">
+                                        <span class="">Collaborate with</span>
+                                        <br/>
+                                        <span class="">team members and</span>
+                                        <br/>
+                                        <span class="">craete reports.</span>
+                                    </h2>
+                                    <p class="fw-bold"><em>“Passion about coding”</em></p>
+                                    <p class="text-muted mb-4">
+                                        Nunc tincidunt vulputate elit. Mauris varius purus malesuada
+                                        neque iaculis malesuada. Aenean gravida magna orci, non
+                                        efficitur est porta id. Donec magna diam.
+                                    </p>
+                                    <p>
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <!-- Logo -->
+                                        <li class="nav-item">
+                                            <img src="./assets/images/logo.png" alt="logo" 
+                                                height="20px" alt="Logo" loading="lazy" /><span style="margin-left: 10px;">Nunc tincidunt vulputate elit. Lorem ipsum</span>
+                                        </li>
+                                        <li class="nav-item">
+                                            <img src="./assets/images/logo.png" alt="logo" 
+                                                height="20px" alt="Logo" loading="lazy" /><span style="margin-left: 10px;">tincidunt vulputate elit.  Lorem ipsum</span>
+                                        </li>
+                                        <li class="nav-item">
+                                            <img src="./assets/images/logo.png" alt="logo" 
+                                                height="20px" alt="Logo" loading="lazy" /><span style="margin-left: 10px;">Nunc vulputate elit.  Lorem ipsum</span>
+                                        </li>
+                                        <li class="nav-item">
+                                            <img src="./assets/images/logo.png" alt="logo" 
+                                                height="20px" alt="Logo" loading="lazy" /><span style="margin-left: 10px;">Nunc tincidunt elit.  Lorem ipsum</span>
+                                        </li>
+                                    </ul>
+                                    </p>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                    <br/>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Second column -->
                     </div>
-                </section>
-                <!--Section: Collaborate-->
+                </div>
+            </section>
+            <!--Section: Collaborate-->
+            <div class="container">
                 <!-- Section: About me -->
                 <section class="mb-10">
                     <div class="container">
@@ -802,9 +848,9 @@
                                     data-mdb-animation-delay="600">
                                     <div class="card-body p-lg-5 shadow-5">
                                         <h2 class="fw-bold">
-                                            <span class="text-primary">One Platform</span>
+                                            <span class="">One Platform</span>
                                             <br/>
-                                            <span class="text-primary">many solutions</span>
+                                            <span class="">many solutions</span>
                                         </h2>
                                         <p class="fw-bold"><em>“Design is intelligence made visible.”</em></p>
                                         <p class="text-muted mb-4">
@@ -815,7 +861,7 @@
                                         <p class="text-muted mb-4 mt-2">
                                             Nunc tincidunt vulputate elit. Mauris varius purus malesuada
                                         </p>
-                                        <a class="btn btn-primary btn-lg btn-rounded" href="https://vatsalshah.netlify.app/" role="button">Checkout My Profile</a>
+                                        <a class="btn btn-primary btn-lg addbackground-color" href="https://vatsalshah.netlify.app/" role="button">Checkout My Profile</a>
                                     </div>
                                 </div>
                             </div>
@@ -849,22 +895,27 @@
                             <div data-mdb-toggle="animation" data-mdb-animation-start="onScroll" data-mdb-animation="fade-in"
                                 data-mdb-animation-show-on-load="false" data-mdb-animation-delay="200">
                                 <div class="rounded-7 p-4 shadow-3" style="background-color: hsl(218, 62.2%, 95%)">
-                                    <hr class="hr hr-blurry">
-                                    <p class="text-muted mt-4 mb-2">Project Manager at Spotify</p>
+
+                                  <div class="flex flex-column justify-content-between align-items-left">
+                                    <img src="./assets/images/22.jpg" class="w-100 rounded-7 mt-n5 shadow-5-strong" style="max-width: 100px" alt="Avatar" />
                                     <p class="h5 mb-4 text-primary">Garry Lindman</p>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <p class="pb-4 mb-4">
+                                    <p class="text-muted mt-4 mb-2">Project Manager at Spotify</p>
+                                    <div class="flex flex-column">
+                                      <span class="fa fa-star checked"></span>
+                                      <span class="fa fa-star checked"></span>
+                                      <span class="fa fa-star checked"></span>
+                                      <span class="fa fa-star checked"></span>
+                                      <span class="fa fa-star checked"></span>
+                                    </div>
+                                    <p class="pb-4 mb-4 text-left">
                                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis molestias quidem
                                         itaque earum tempora distinctio soluta ut, eius, impedit porro iure praesentium
                                         ratione possimus quos suscipit, ratione nostrum cum odit.
                                     </p>
+                                  </div>
+
+                                    <hr class="hr hr-blurry">
                                 </div>
-                                <img src="./assets/images/22.jpg" class="w-100 rounded-7 mt-n5 shadow-5-strong"
-                                    style="max-width: 100px" alt="Avatar" />
                             </div>
                         </div>
                         <!-- First column -->
@@ -920,7 +971,7 @@
                 <!-- Section: Testimonials -->
             </div>
             <!--Section: Content-->
-            <section class="bg-info bg-opacity-25">
+            <section class="add-light-background-color">
                 <div class="container py-5">
                     <div class="row">
                         <div class="col-md-6 gx-5 mb-4">
@@ -932,20 +983,17 @@
                             </div>
                         </div>
                         <div class="col-md-6 gx-5 mb-4">
-                            <h4><strong>Facilis consequatur eligendi</strong></h4>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
-                                consequatur eligendi quisquam doloremque vero ex debitis
-                                veritatis placeat unde animi laborum sapiente illo possimus,
-                                commodi dignissimos obcaecati illum maiores corporis.
-                            </p>
-                            <p><strong>Doloremque vero ex debitis veritatis?</strong></p>
-                            <p class="text-muted">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-                                itaque voluptate nesciunt laborum incidunt. Officia, quam
-                                consectetur. Earum eligendi aliquam illum alias, unde optio
-                                accusantium soluta, iusto molestiae adipisci et?
-                            </p>
+                            <h4><strong></strong></h4>
+                            <h2 class="fw-bold">
+                                <span class="">All communicatione</span>
+                                <br/>
+                                <span class="">from your team is one</span>
+                                <br/>
+                                <span class="">place. Accomplish</span>
+                                <br/>
+                                <span class="">more, faster.</span>
+                            </h2>
+                            <a class="btn btn-primary mt-3 btn-lg addbackground-color" href="https://vatsalshah.netlify.app/" role="button">Start for free</a>
                         </div>
                     </div>
                 </div>
@@ -971,14 +1019,17 @@
                             <!--Grid row-->
                             <!--Grid column-->
                             <div class="col-12">
-                                <div class="d-flex flex-wrap justify-content-between w-100">
+                                <div class="d-flex flex-wrap justify-content-between align-items-center w-100 subscribe">
                                     <h1 class="pt-2 mb-1">
-                                        <strong>Subscribe to Our Newsletter</strong>
+                                        <span><strong>Subscribe to Our</strong></span>
+                                        <br/>
+                                        <span><strong>Newsletter</strong></span>
                                     </h1>
-                                    <div class="d-flex justify-content-right align-items-center p-2" style="width: max-content; border: 1px solid #ccc;">
+                                    <div class="d-flex justify-content-right align-items-center p-2 inputbox" style="width: max-content; flex-basis: 55%; border: 1px solid #ccc; height: min-content;">
                                         <!-- Email input -->
-                                        <input type="email" id="form5Example21" class="border-0 form-control me-2" placeholder="enter email address" />
-                                        <button type="submit" class="btn btn-info">
+                                        <i class="fa fa-envelope px-2"></i>
+                                        <input type="email" id="form5Example21" class="border-0 form-control me-2" placeholder="Your email address" />
+                                        <button type="submit" class="btn addbackground-color">
                                         Subscribe
                                         </button>
                                     </div>
@@ -993,44 +1044,60 @@
                         </form>
                     </div>
                     <!-- Grid row -->
-                    <div class="row mt-3">
+                    <div class="row mt-5">
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
                             <!-- Content -->
                             <h6 class="text-uppercase fw-bold mb-4">
-                                <i class="fas fa-gem me-3 text-secondary"></i>Vatsal Tech
+                                <img src="./assets/images/logo.png"
+                                height="20px" alt="Logo" loading="lazy" alt="logo" />
+                                <span>VatsalTech</span>
                             </h6>
                             <p>
                                 Believe In Yourself.
                             </p>
                             <div class="social">
-                                <a href="" class="me-4 link-secondary">
-                                <i class="fab fa-facebook-f"></i>
+                                <a href="#" class="me-4 link-dark bg-light border-2 rounded-circle" style="border: 1px solid black; padding: 5px;">
+                                <i class="fab fa-facebook-f" style="padding-left: 4px;"></i>
                                 </a>
-                                <a href="" class="me-4 link-secondary">
-                                <i class="fab fa-twitter"></i>
+                                <a href="#" class="me-4 link-dark bg-light border-2 rounded-circle" style="border: 1px solid black; padding: 5px;">
+                                <i class="fab fa-twitter" style="padding-left: 4px;"></i>
                                 </a>
-                                <a href="" class="me-4 link-secondary">
-                                <i class="fab fa-instagram"></i>
-                                </a>
-                                <a href="" class="me-4 link-secondary">
-                                <i class="fab fa-linkedin"></i>
-                                </a>
-                                <a href="" class="me-4 link-secondary">
-                                <i class="fab fa-github"></i>
+                                <a href="#" class="me-4 link-dark bg-light border-2 rounded-circle" style="border: 1px solid black; padding: 5px;">
+                                <i class="fab fa-linkedin" style="padding-left: 4px;"></i>
                                 </a>
                             </div>
                             <br/>
                             <!-- Copyright -->
                             <div class="text-left" style="background-color: rgba(0, 0, 0, 0.025);">
-                                Copyright: © 2023
+                                Copyright: © 2023 Vatsaltech.com
                                 <br/>
-                                <a class="fw-bold" href="https://mdbootstrap.com/">Vatsaltech.com</a>
+                                <a class="fw-bold" href="https://mdbootstrap.com/" style="color: rgba(0,0,255,0.4);">India company</a>
                                 All Rights Reserved
                             </div>
                             <!-- Copyright -->
                         </div>
                         <!-- Grid column -->
+                        <!-- Grid column -->
+                        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                          <!-- Links -->
+                          <h6 class="text-uppercase fw-bold mb-4">
+                              Company
+                          </h6>
+                          <p>
+                              <a href="#!" class="text-reset">About us</a>
+                          </p>
+                          <p>
+                              <a href="#!" class="text-reset">Contact us</a>
+                          </p>
+                          <p>
+                              <a href="#!" class="text-reset">Career</a>
+                          </p>
+                          <p>
+                              <a href="#!" class="text-reset">Blog</a>
+                          </p>
+                      </div>
+                      <!-- Grid column -->
                         <!-- Grid column -->
                         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                             <!-- Links -->
@@ -1038,7 +1105,10 @@
                                 Products
                             </h6>
                             <p>
-                                <a href="#!" class="text-reset">Angular</a>
+                                <a href="#!" class="text-reset">PHP</a>
+                            </p>
+                            <p>
+                              <a href="#!" class="text-reset">Laravel</a>
                             </p>
                             <p>
                                 <a href="#!" class="text-reset">React</a>
@@ -1047,14 +1117,16 @@
                                 <a href="#!" class="text-reset">Vue</a>
                             </p>
                             <p>
-                                <a href="#!" class="text-reset">Laravel</a>
+                              <a href="#!" class="text-reset">MongoDB</a>
                             </p>
+                            
                         </div>
                         <!-- Grid column -->
+                        
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                             <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">
+                            <h6 class="fw-bold mb-4">
                                 Useful links
                             </h6>
                             <p>
@@ -1066,44 +1138,26 @@
                             <p>
                                 <a href="#!" class="text-reset">Orders</a>
                             </p>
-                            <p>
-                                <a href="#!" class="text-reset">Help</a>
-                            </p>
                         </div>
                         <!-- Grid column -->
                         <!-- Grid column -->
                         <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">
-                                Useful links
-                            </h6>
-                            <p>
-                                <a href="#!" class="text-reset">Pricing</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Settings</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Orders</a>
-                            </p>
-                            <p>
-                                <a href="#!" class="text-reset">Help</a>
-                            </p>
-                        </div>
-                        <!-- Grid column -->
-                        <!-- Grid column -->
-                        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                            <!-- Links -->
-                            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                            <p><i class="fas fa-home me-3 text-secondary"></i> New York, NY 10012, US</p>
-                            <p>
-                                <i class="fas fa-envelope me-3 text-secondary"></i>
-                                info@example.com
-                            </p>
-                            <p><i class="fas fa-phone me-3 text-secondary"></i> + 01 234 567 88</p>
-                            <p><i class="fas fa-print me-3 text-secondary"></i> + 01 234 567 89</p>
-                        </div>
-                        <!-- Grid column -->
+                          <!-- Links -->
+                          <h6 class="text-uppercase fw-bold mb-4">
+                              Help
+                          </h6>
+                          <p>
+                              <a href="#!" class="text-reset">Payment Method</a>
+                          </p>
+                          <p>
+                              <a href="#!" class="text-reset">Knowledge Base</a>
+                          </p>
+                          <p>
+                              <a href="#!" class="text-reset">Tutorials</a>
+                          </p>
+                      </div>
+                      <!-- Grid column -->
+                        
                     </div>
                     <!-- Grid row -->
                 </div>
